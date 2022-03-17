@@ -1,0 +1,12 @@
+[0;1;32m●[0m gunicorn.service - gunicorn daemon
+     Loaded: loaded (/etc/systemd/system/gunicorn.service; disabled; vendor preset: enabled)
+     Active: [0;1;32mactive (running)[0m since Tue 2022-03-15 06:00:40 UTC; 1min 8s ago
+TriggeredBy: [0;1;32m●[0m gunicorn.socket
+   Main PID: 32577 (gunicorn)
+      Tasks: 4 (limit: 9508)
+     Memory: 112.0M
+     CGroup: /system.slice/gunicorn.service
+             ├─32577 /home/jackfros/portfolio/env/bin/python /home/jackfros/portfolio/env/bin/gunicorn --access-logfile - --workers 3 --bind unix:/run/gunicorn.sock portfolio.wsgi:application
+             ├─32588 /home/jackfros/portfolio/env/bin/python /home/jackfros/portfolio/env/bin/gunicorn --access-logfile - --workers 3 --bind unix:/run/gunicorn.sock portfolio.wsgi:application
+             ├─32589 /home/jackfros/portfolio/env/bin/python /home/jackfros/portfolio/env/bin/gunicorn --access-logfile - --workers 3 --bind unix:/run/gunicorn.sock portfolio.wsgi:application
+             └─32590 /home/jackfros/portfolio/env/bin/python /home/jackfros/portfolio/env/bin/gunicorn --access-logfile - --workers 3 --bind unix:/run/gunicorn.sock portfolio.wsgi:application
